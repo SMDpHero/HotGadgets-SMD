@@ -4,9 +4,366 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot Gadgets Store...</title>
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <h1>Bangladesh</h1>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#catagories">Catagories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar end  -->
+
+    <!-- Carousel -->
+    <div class="carousel-bg">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                  <h1 class="carousel-txt">Macbook Pro</h1>
+                  <p class="carousel-txt">
+                    MacBook Pro features the most advanced lineup of chips ever built for a pro laptop. 
+                  </p>
+                  <button class="btn-buy-now carousel-txt">
+                    BUY NOW <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/slider-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                  <h1 class="carousel-txt">Google Home Smart Speaker</h1>
+                  <p class="carousel-txt">
+                    Google Home is powered by the Google Assistant. Ask it questions. Tell it to do things. It’s your own Google, always ready to help. Control your bulb by voice.
+                  </p>
+                  <button class="btn-buy-now carousel-txt">
+                    BUY NOW <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/slider-2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                  <h1 class="carousel-txt">JBL Charge 3</h1>
+                  <p class="carousel-txt">
+                    Portable Waterproof Speaker with Powerbank.
+                  </p>
+                  <button class="btn-buy-now carousel-txt">
+                    BUY NOW <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="col-md-7">
+                  <img
+                    src="images/banner-products/slider-3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Smartphone Items-->
+    <div class="container items smartphone" id="product">
+      <div class="row">
+        <div class="col-md-6"><h3>Smartphones</h3></div>
+        <div class="col-md-6 see-all"><h5>See All</h5></div>
+      </div>
+    </div>
+    <!-- SmartphoneCards -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-01.png"
+              class="card-img-top"
+              alt="Phone-01"
+            />
+            <div class="card-body">
+              <h5 class="card-title">iPhone 11 Pro</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$999</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-02.png"
+              class="card-img-top"
+              alt="Phone-02"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy Note10+</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$799</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/phone/phone-03.png"
+              class="card-img-top"
+              alt="Phone-03"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Redmi K30i 5G</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$699</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smartphone items end-->
+
+    <!-- Laptop items-->
+    <div class="container items">
+      <div class="row">
+        <div class="col-md-6"><h3>Laptop</h3></div>
+        <div class="col-md-6 see-all"><h5>See All</h5></div>
+      </div>
+    </div>
+    <!-- Cards Laptop -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-1.png"
+              class="card-img-top"
+              alt="Phone-01"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Asus VivoBook</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$1299</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-2.png"
+              class="card-img-top"
+              alt="Phone-02"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Razer Blade 15</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$2799</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/laptop/product-3.png"
+              class="card-img-top"
+              alt="Phone-03"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Mi Notebook Pro</h5>
+              <p class="card-text">
+                Save up to $220.00 on your new device with Hotgadget.com Gift
+                Card credit when you trade in your old device.
+              </p>
+            </div>
+            <div class="card-footer">
+              <h5>$1699</h5>
+              <button class="btn-buy-now carousel-txt">
+                BUY NOW <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Laptop items End-->
+
+    <!-- catagories Start -->
+    <div class="container catagories" id="catagories">
+      <div class="row catagories">
+        <h3>Catagories</h3>
+        <button class="catagories-bottom"></button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 d-flex align-items-center">
+          <div class="left-cat cat-card">
+            <img src="images/Categories/bag.png" alt="" />
+            <p class="cat-text">Bag</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="cat-row d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="mid-cat cat-card">
+              <div class="mid-cat-row">
+                <img src="images/Categories/perfume.png" alt="" />
+                <p class="cat-text">Perfume</p>
+              </div>
+            </div>
+            <div class="mid-cat cat-card">
+              <div class="mid-cat-row">
+                <img src="images/Categories/shoe.png" alt="" />
+                <p class="cat-text">Shoe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/Categories/pale-order.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- catagories End -->
+
+    <footer>©2025 Hotgadget. All rights reserved, Shekh MD Nayem Yousuf, Bangladesh.</footer>
   </body>
 </html>
