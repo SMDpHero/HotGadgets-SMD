@@ -106,6 +106,9 @@
 .cat-text {
   padding-top: 15px;
 }
+.right-cat img{
+width: 100%;
+}
 footer{
   text-align: center;
   margin-bottom: 50px;
